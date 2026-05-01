@@ -1,0 +1,6 @@
+{
+    "name": "spaceship",
+    "tree": {
+        "$path": "lib"
+    }
+}

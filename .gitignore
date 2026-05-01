@@ -1,0 +1,20 @@
+# Rojo builds
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# Roblox studio place lock files
+*.rbxl.lock
+*.rbxlx.lock
+
+# Rojo sourcemap
+sourcemap.json
+
+# macOS finder meta
+.DS_Store
+
+# Wally packages
+Packages/
+DevPackages/
+*.tar*

@@ -1,0 +1,30 @@
+[package]
+name = "wireofparadise/spaceship"
+description = "A painless & robust data store manager for Roblox with schema versioning."
+version = "1.0.0"
+license = "MIT"
+authors = ["wireofparadise <wireofparadise@gmail.com>"]
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+homepage = "https://wireofparadise.gitbook.io/spaceship/"
+repository = "https://github.com/wireofparadise/spaceship"
+exclude = [
+    ".git",
+    ".vscode",
+    ".DS_Store",
+    ".gitignore",
+    "*.tar*",
+    ".luaurc",
+    ".npmignore",
+    "package-lock.json",
+    "package.json",
+    "*.rbxl",
+    "*.rbxlx",
+    "*.rbxl.lock",
+    "*.rbxlx.lock",
+    "*.rbxm",
+    "*.rbxmx",
+    "rokit.toml",
+    "selene.toml",
+    "sourcemap.json",
+]
