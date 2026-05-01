@@ -16,7 +16,7 @@ export declare class Collection<T> {
     public constructor(options: CollectionOptions<T>);
 
     public Select(key: string): T | undefined;
-    public Update(key: string, data: T, userIds?: number[]): T | undefined;
+    public Update(key: string, data: T, userIds?: number[]): boolean;
 }
 
 export declare const Spaceship: {
