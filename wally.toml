@@ -6,7 +6,7 @@ license = "MIT"
 authors = ["wireofparadise <wireofparadise@gmail.com>"]
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
-homepage = "https://wireofparadise.gitbook.io/spaceship-docs/"
+homepage = "https://wireofparadise.github.io/spaceship-docs/"
 repository = "https://github.com/wireofparadise/spaceship"
 exclude = [
     ".git",
