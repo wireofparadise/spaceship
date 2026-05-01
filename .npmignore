@@ -1,0 +1,13 @@
+.git/
+.vscode/
+.DS_Store
+.gitignore
+.luaurc
+CONTRIBUTING.md
+default.project.json
+*.tar*
+rokit.toml
+selene.toml
+sourcemap.json
+wally.lock
+wally.toml

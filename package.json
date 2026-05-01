@@ -1,0 +1,20 @@
+{
+    "name": "@rbxts/spaceship",
+    "author": "wireofparadise <wireofparadise@gmail.com",
+    "description": "A painless & robust data store manager for Roblox with schema versioning.",
+    "version": "1.0.0",
+    "publishConfig": {
+        "access": "public"
+    },
+    "homepage": "https://wireofparadise.github.io/spaceship-docs/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wireofparadise/spaceship.git"
+    },
+    "bugs": {
+        "url": "https://github.com/wireofparadise/spaceship/issues"
+    },
+    "license": "MIT",
+    "main": "./lib/init.luau",
+    "types": "./lib/init.d.ts"
+}
