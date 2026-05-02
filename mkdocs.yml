@@ -1,0 +1,41 @@
+site_name: Spaceship Documentation
+site_url: https://wireofparadise.github.io/spaceship/
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+repo_url: https://github.com/wireofparadise/spaceship
+repo_name: spaceship
+edit_uri: edit/main/docs/
+
+nav:
+  - Introduction: index.md
+  
+  - Tutorials:
+    - Installation: tutorials/installation.md
+    - Getting started: tutorials/getting-started.md
+
+  - API Reference:
+    - Collection: api-reference/collection.md
+    - CollectionOptions: api-reference/collection-options.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
