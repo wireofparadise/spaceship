@@ -17,9 +17,6 @@ exclude = [
     ".gitignore",
     ".github/",
 
-    # GitHub workflows
-    ".github/",
-
     # Visual Studio Code settings
     ".vscode/",
 
