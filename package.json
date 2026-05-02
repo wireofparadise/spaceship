@@ -1,6 +1,6 @@
 {
     "name": "@rbxts/spaceship",
-    "author": "wireofparadise <wireofparadise@gmail.com",
+    "author": "wireofparadise <wireofparadise@gmail.com>",
     "description": "A painless & robust data store manager for Roblox with schema versioning.",
     "version": "1.0.0",
     "publishConfig": {
