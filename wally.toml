@@ -13,7 +13,7 @@ exclude = [
     ".vscode",
     ".DS_Store",
     ".gitignore",
-    "*.tar*",
+    "*.tgz",
     ".luaurc",
     "CONTRIBUTING.md",
     ".npmignore",
