@@ -5,9 +5,15 @@
 .luaurc
 CONTRIBUTING.md
 default.project.json
-*.tar*
+*.tgz
 rokit.toml
 selene.toml
 sourcemap.json
 wally.lock
 wally.toml
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+*.rbxl.lock
+*.rbxlx.lock

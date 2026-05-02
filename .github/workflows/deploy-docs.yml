@@ -1,0 +1,39 @@
+name: Deploy documentation to GitHub Pages
+
+on:
+  push:
+    tags:
+      - 'v*.*.0'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+      
+      - name: Deploy with mike
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}
+          VERSION=${VERSION%.0}
+          mike deploy --push --update-aliases --title "${VERSION}.x" "$VERSION" latest
+          mike set-default --push latest
