@@ -33,6 +33,10 @@ nav:
     - Collection: api-reference/collection.md
     - CollectionOptions: api-reference/collection-options.md
 
+extra:
+  version:
+    provider: mike
+
 markdown_extensions:
   - abbr
   - admonition
