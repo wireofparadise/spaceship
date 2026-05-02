@@ -9,7 +9,7 @@
     "homepage": "https://wireofparadise.github.io/spaceship-docs/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/wireofparadise/spaceship.git"
+        "url": "git+https://github.com/wireofparadise/spaceship.git"
     },
     "bugs": {
         "url": "https://github.com/wireofparadise/spaceship/issues"
