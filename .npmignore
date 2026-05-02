@@ -5,7 +5,7 @@
 .luaurc
 CONTRIBUTING.md
 default.project.json
-*.tar*
+*.tgz
 rokit.toml
 selene.toml
 sourcemap.json
