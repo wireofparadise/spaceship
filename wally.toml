@@ -13,15 +13,15 @@ exclude = [
     ".DS_Store",
 
     # Git
-    ".git/",
+    ".git",
     ".gitignore",
-    ".github/",
+    ".github",
 
     # Visual Studio Code settings
-    ".vscode/",
+    ".vscode",
 
     # Documentation
-    "docs/",
+    "docs",
     "CONTRIBUTING.md",
     "mkdocs.yml",
     "requirements.txt",
@@ -30,7 +30,7 @@ exclude = [
     ".luaurc",
 
     # npm
-    "node_modules/",
+    "node_modules",
     "package-lock.json",
     "package.json",
 
