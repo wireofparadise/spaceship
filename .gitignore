@@ -14,7 +14,8 @@ sourcemap.json
 # macOS finder meta
 .DS_Store
 
-# Wally packages
+# Packages
 Packages/
 DevPackages/
-*.tar*
+node_modules/
+*.tgz
