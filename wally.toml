@@ -9,24 +9,47 @@ realm = "shared"
 homepage = "https://wireofparadise.github.io/spaceship/"
 repository = "https://github.com/wireofparadise/spaceship"
 exclude = [
-    ".git",
-    ".vscode",
+    # macOS finder meta
     ".DS_Store",
+
+    # Git
+    ".git/",
     ".gitignore",
-    "*.tgz",
-    ".luaurc",
+    ".github/",
+
+    # GitHub workflows
+    ".github/",
+
+    # Visual Studio Code settings
+    ".vscode/",
+
+    # Documentation
+    "docs/",
     "CONTRIBUTING.md",
-    ".npmignore",
+    "mkdocs.yml",
+    "requirements.txt",
+
+    # Language server configuration
+    ".luaurc",
+
+    # npm
+    "node_modules/",
     "package-lock.json",
     "package.json",
+
+    # Toolchain
+    "rokit.toml",
+    "selene.toml",
+    "sourcemap.json",
+
+    # Rojo builds
     "*.rbxl",
     "*.rbxlx",
     "*.rbxl.lock",
     "*.rbxlx.lock",
     "*.rbxm",
     "*.rbxmx",
-    "*.d.ts",
-    "rokit.toml",
-    "selene.toml",
-    "sourcemap.json",
+
+    # Packages
+    "*.tgz",
 ]
