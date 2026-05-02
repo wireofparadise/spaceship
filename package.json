@@ -16,5 +16,6 @@
     },
     "license": "MIT",
     "main": "./lib/init.luau",
-    "types": "./lib/init.d.ts"
+    "types": "./lib/init.d.ts",
+    "files": ["lib/**.lua", "lib/**.luau", "lib/**.d.ts", "LICENSE", "README.md"]
 }
