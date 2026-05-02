@@ -6,7 +6,7 @@
     "publishConfig": {
         "access": "public"
     },
-    "homepage": "https://wireofparadise.github.io/spaceship-docs/",
+    "homepage": "https://wireofparadise.github.io/spaceship/",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/wireofparadise/spaceship.git"
