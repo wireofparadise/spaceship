@@ -32,6 +32,7 @@ nav:
   - API Reference:
     - Collection: api-reference/collection.md
     - CollectionOptions: api-reference/collection-options.md
+    - Error: api-reference/error.md
 
 extra:
   version:
