@@ -1,6 +1,6 @@
 # spaceship
 
-A painless & robust data store system for Roblox with schema versioning.
+A type-safe data store system for Roblox that simplifies loading, saving, and migrating data through structured, versioned collections.
 
 ## Documentation
 
