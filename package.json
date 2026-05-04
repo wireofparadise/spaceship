@@ -1,8 +1,8 @@
 {
     "name": "@rbxts/spaceship",
     "author": "wireofparadise <wireofparadise@gmail.com>",
-    "description": "A painless & robust data store manager for Roblox with schema versioning.",
-    "version": "1.0.0",
+    "description": "A type-safe data store system for Roblox that simplifies loading, saving, and migrating data through structured, versioned collections.",
+    "version": "1.1.0",
     "publishConfig": {
         "access": "public"
     },
@@ -16,5 +16,6 @@
     },
     "license": "MIT",
     "main": "./lib/init.luau",
-    "types": "./lib/init.d.ts"
+    "types": "./lib/init.d.ts",
+    "files": ["lib/**/*.lua", "lib/**/*.luau", "lib/**/*.d.ts", "LICENSE", "README.md"]
 }

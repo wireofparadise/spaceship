@@ -15,6 +15,8 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+  features:
+    - content.action.edit
 
 repo_url: https://github.com/wireofparadise/spaceship
 repo_name: spaceship
@@ -25,11 +27,17 @@ nav:
   
   - Tutorials:
     - Installation: tutorials/installation.md
-    - Getting started: tutorials/getting-started.md
+    - Quickstart: tutorials/quickstart.md
+    - Migrating data: tutorials/migrating-data.md
 
   - API Reference:
     - Collection: api-reference/collection.md
     - CollectionOptions: api-reference/collection-options.md
+    - Error: api-reference/error.md
+
+extra:
+  version:
+    provider: mike
 
 markdown_extensions:
   - abbr
@@ -39,3 +47,5 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: true

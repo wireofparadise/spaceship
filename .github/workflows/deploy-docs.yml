@@ -3,7 +3,7 @@ name: Deploy documentation to GitHub Pages
 on:
   push:
     tags:
-      - 'v*.*.0'
+      - 'v*.*.*'
 
 permissions:
   contents: write
