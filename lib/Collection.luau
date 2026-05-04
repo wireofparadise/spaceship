@@ -41,9 +41,9 @@ function Collection.new<T>(options: Options<T>): Interfaces.ICollection<T>
 
 	self.Name = options.Name
 	self.Scope = options.Scope or "global"
-	self.DefaultSchema = Utils.deepCopy(options.Default)
+	self.DefaultSchema = Utils.DeepCopy(options.Default)
 	self.ValidateSchema = options.Validate
-	self.Migrations = Utils.deepCopy(options.Migrations)
+	self.Migrations = Utils.DeepCopy(options.Migrations)
 	self.MaxRetries = if options.MaxRetries ~= nil then options.MaxRetries else 3
 	self.RetryDelaySeconds = if options.RetryDelaySeconds ~= nil then options.RetryDelaySeconds else 2
 	self.DataStore = DataStoreService:GetDataStore(self.Name, self.Scope)
@@ -96,7 +96,7 @@ function Collection.Select<T>(self: Collection<T>, key: string): (T, Errors.Erro
 						Errors.new(Errors.ErrorKind.Migration, string.format("migration %d does not exist", i))
 				end
 
-				data = migrate(Utils.deepCopy(data))
+				data = migrate(Utils.DeepCopy(data))
 			end
 
 			--self:Log(string.format("migrated key %s from version %d to %d", key, savedVersion, latestVersion))
@@ -137,7 +137,7 @@ function Collection.Update<T>(self: Collection<T>, key: string, data: any, userI
 
 				local newUserIds = if not userIds
 					then (if keyInfo then keyInfo:GetUserIds() else nil)
-					else Utils.deepCopy(userIds)
+					else Utils.DeepCopy(userIds)
 
 				return data, newUserIds, {
 					version = self.LatestSchemaVersion,
