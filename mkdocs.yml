@@ -27,7 +27,8 @@ nav:
   
   - Tutorials:
     - Installation: tutorials/installation.md
-    - Getting started: tutorials/getting-started.md
+    - Quickstart: tutorials/quickstart.md
+    - Migrating data: tutorials/migrating-data.md
 
   - API Reference:
     - Collection: api-reference/collection.md
