@@ -46,6 +46,9 @@ Assuming that you have followed the [quickstart tutorial](./quickstart.md), you 
 
 Migrating data is really simple in Spaceship. You have to update your type, default schema, valdiation logic and add a transformation function to the [`Migrations`](../api-reference/collection-options.md#migrations) array.
 
+!!! danger "Migrations"
+    Migrations should never change once you've published them. Any changes to existing migration functions may result in data loss.
+
 === "Luau"
     ```luau
     type PlayerSave = {
