@@ -49,4 +49,7 @@ exclude = [
 
     # Packages
     "*.tgz",
+
+    # TypeScript files
+    "*.ts",
 ]
