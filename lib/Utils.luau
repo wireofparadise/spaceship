@@ -1,6 +1,6 @@
-local Table = {}
+local Utils = {}
 
-function Table.DeepCopy(t: any)
+function Utils.deepCopy(t: any)
 	if type(t) ~= "table" then
 		return t
 	end
@@ -8,10 +8,10 @@ function Table.DeepCopy(t: any)
 	local copy = {}
 
 	for k, v in pairs(t) do
-		copy[k] = Table.DeepCopy(v)
+		copy[k] = Utils.deepCopy(v)
 	end
 
 	return setmetatable(copy, getmetatable(t))
 end
 
-return Table
+return Utils
