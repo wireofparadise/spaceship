@@ -1,0 +1,32 @@
+name: Publish wally package
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set-up rokit
+        uses: CompeyDev/setup-rokit@v0.2.1
+
+      - name: Log-in to wally
+        run: wally login --token "${{ secrets.WALLY_AUTH_TOKEN }}"
+      
+      - name: Install packages
+        run: wally install
+      
+      - name: Publish package to wally
+        run: wally publish

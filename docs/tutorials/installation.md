@@ -7,7 +7,7 @@
     Add the following line to your `wally.toml`:
 
     ```toml
-    Spaceship = "wireofparadise/spaceship@1.1.0"
+    Spaceship = "wireofparadise/spaceship@1.1.1"
     ```
 
     > This version may not always be up-to-date. Please make sure to check [the latest release version on GitHub](https://github.com/wireofparadise/spaceship/releases/latest) and use that value as your package version.

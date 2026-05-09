@@ -47,7 +47,7 @@ function Collection.new<T>(options: Options<T>): Interfaces.ICollection<T>
 	self.MaxRetries = if options.MaxRetries ~= nil then options.MaxRetries else 3
 	self.RetryDelaySeconds = if options.RetryDelaySeconds ~= nil then options.RetryDelaySeconds else 2
 	self.DataStore = DataStoreService:GetDataStore(self.Name, self.Scope)
-	self.LatestSchemaVersion = #self.Migrations
+	self.LatestSchemaVersion = if self.Migrations then #self.Migrations else 0
 
 	return self
 end
