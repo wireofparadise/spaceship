@@ -34,6 +34,6 @@ jobs:
       - name: Deploy with mike
         run: |
           VERSION=${GITHUB_REF_NAME#v}
-          VERSION=${VERSION%.0}
+          VERSION=${VERSION%.*}
           mike deploy --push --update-aliases --title "${VERSION}.x" "$VERSION" latest
           mike set-default --push latest
